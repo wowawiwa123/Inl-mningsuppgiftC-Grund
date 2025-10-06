@@ -1,0 +1,17 @@
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Application.deps.json
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Application.dll
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Application.pdb
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Domain.dll
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Domain.pdb
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoastEducation.Application.csproj.AssemblyReference.cache
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoastEducation.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoastEducation.Application.AssemblyInfoInputs.cache
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoastEducation.Application.AssemblyInfo.cs
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoastEducation.Application.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoas.35575D7F.Up2Date
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoastEducation.Application.dll
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\refint\WestCoastEducation.Application.dll
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoastEducation.Application.pdb
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\ref\WestCoastEducation.Application.dll
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Persistent.dll
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Persistent.pdb

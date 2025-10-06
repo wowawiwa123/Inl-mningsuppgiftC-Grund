@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "WestCoastEducation.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/WestCoastEducation.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WestCoastEducation.Domain.dll": {}
+        }
+      },
+      "WestCoastEducation.Persistent/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/WestCoastEducation.Persistent.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WestCoastEducation.Persistent.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WestCoastEducation.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WestCoastEducation.Domain/WestCoastEducation.Domain.csproj",
+      "msbuildProject": "../WestCoastEducation.Domain/WestCoastEducation.Domain.csproj"
+    },
+    "WestCoastEducation.Persistent/1.0.0": {
+      "type": "project",
+      "path": "../WestCoastEducation.Persistent/WestCoastEducation.Persistent.csproj",
+      "msbuildProject": "../WestCoastEducation.Persistent/WestCoastEducation.Persistent.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "WestCoastEducation.Domain >= 1.0.0",
+      "WestCoastEducation.Persistent >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kevin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kevin\\Documents\\VisualCode\\InlämningsuppgiftC#Grund\\WestCoastEducation.Application\\WestCoastEducation.Application.csproj",
+      "projectName": "WestCoastEducation.Application",
+      "projectPath": "C:\\Users\\kevin\\Documents\\VisualCode\\InlämningsuppgiftC#Grund\\WestCoastEducation.Application\\WestCoastEducation.Application.csproj",
+      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kevin\\Documents\\VisualCode\\InlämningsuppgiftC#Grund\\WestCoastEducation.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\Users\\kevin\\Documents\\VisualCode\\InlämningsuppgiftC#Grund\\WestCoastEducation.Domain\\WestCoastEducation.Domain.csproj": {
+              "projectPath": "C:\\Users\\kevin\\Documents\\VisualCode\\InlämningsuppgiftC#Grund\\WestCoastEducation.Domain\\WestCoastEducation.Domain.csproj"
+            },
+            "C:\\Users\\kevin\\Documents\\VisualCode\\InlämningsuppgiftC#Grund\\WestCoastEducation.Persistent\\WestCoastEducation.Persistent.csproj": {
+              "projectPath": "C:\\Users\\kevin\\Documents\\VisualCode\\InlämningsuppgiftC#Grund\\WestCoastEducation.Persistent\\WestCoastEducation.Persistent.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

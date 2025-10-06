@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "WestCoastEducation.Application/1.0.0": {
+        "dependencies": {
+          "WestCoastEducation.Domain": "1.0.0",
+          "WestCoastEducation.Persistent": "1.0.0"
+        },
+        "runtime": {
+          "WestCoastEducation.Application.dll": {}
+        }
+      },
+      "WestCoastEducation.Domain/1.0.0": {
+        "runtime": {
+          "WestCoastEducation.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "WestCoastEducation.Persistent/1.0.0": {
+        "runtime": {
+          "WestCoastEducation.Persistent.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WestCoastEducation.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WestCoastEducation.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WestCoastEducation.Persistent/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

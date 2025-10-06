@@ -1,0 +1,25 @@
+{
+  "courseId": "1111",
+  "title": "Math",
+  "courseLength": "2 months",
+  "startDate": "2025-01-30T00:00:00",
+  "endDate": "2025-03-30T00:00:00",
+  "type": 1,
+  "students": [
+    {
+      "firstName": "Patrik",
+      "lastName": "Sjöstjärna",
+      "adress": "Wrangelsvägen 89A",
+      "postalCode": "245-53",
+      "personalIdentityNumber": "1123-311"
+    },
+    {
+      "firstName": "Spongebob",
+      "lastName": "Squarepants",
+      "adress": "Wrangelsvägen 87A",
+      "postalCode": "245-53",
+      "personalIdentityNumber": "2232-112"
+    }
+  ],
+  "teachers": []
+}
