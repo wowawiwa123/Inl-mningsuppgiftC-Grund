@@ -17,6 +17,12 @@ public class Course : IInfo
     private readonly List<Teacher> teachers = new();
     public  List<Teacher> Teachers => teachers;
 
+    private readonly List<Administrator> administrators = new();
+    public  List<Administrator> Administrators => administrators;
+    
+    private readonly List<EducationLeader> educationLeaders = new();
+    public  List<EducationLeader> EducationLeaders => educationLeaders;
+
 
     public bool AddStudent(Student studentToAdd)
     {
@@ -26,7 +32,7 @@ public class Course : IInfo
         }
         else
         {
-            students.Add(studentToAdd);       
+            students.Add(studentToAdd);
             return true;
         }
     }
@@ -40,6 +46,29 @@ public class Course : IInfo
         else
         {
             teachers.Add(teacherToAdd);
+            return true;
+        }
+    }
+
+    public bool AddAdminstrator(Administrator administratorToAdd)
+    {
+        if (administrators.Any(administrator => administrator.PersonalIdentityNumber == administratorToAdd.PersonalIdentityNumber))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    public bool AddEducationLeader(EducationLeader educationLeaderToAdd)
+    {
+        if (educationLeaders.Any(educationleader => educationleader.PersonalIdentityNumber == educationLeaderToAdd.PersonalIdentityNumber))
+        {
+            return false;
+        }
+        else
+        {
             return true;
         }
     }

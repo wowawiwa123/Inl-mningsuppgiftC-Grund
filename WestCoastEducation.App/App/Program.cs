@@ -12,7 +12,8 @@ class Program
     static void Main()
     {
         var storage = new JsonStorage();
-        var courseService = new CourseService(storage);
+        var jsonService = new JsonService(storage);
+        var courseService = new CourseService();
         var path = $"{Environment.CurrentDirectory}/Data/courses.json";
 
 
@@ -41,7 +42,17 @@ class Program
             PersonalIdentityNumber = "7782-312"
         };
 
-        var course = new Course();
+        var teacher1 = new Teacher()
+        {
+            FirstName = "Wendy",
+            LastName = "Squirrel",
+            Adress = "Bamsamgatan 55A",
+            PostalCode = "776-32",
+            PersonalIdentityNumber = "7782-312",
+            AreaOfKnowledge = "Math - PE - Art",
+            ResponsibleCourses = "Math"
+        };
+
         var course1 = new Course()
         {
             CourseId = "1111",
@@ -70,11 +81,14 @@ class Program
             Type = CourseType.Remote
         };
 
+        
         courseService.AddStudentToCourse(course1, student1);
         courseService.AddStudentToCourse(course1, student2);
+        courseService.AddTeacherToCourse(course1, teacher1);
         courseService.ShowCourseInfo(course1);
-        courseService.SaveCourse(path, course1);
-        courseService.GetCourse(path);
+        jsonService.SaveCourse(path, course1);
+        
+        
         
     }
     

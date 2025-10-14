@@ -21,5 +21,17 @@
       "personalIdentityNumber": "2232-112"
     }
   ],
-  "teachers": []
+  "teachers": [
+    {
+      "areaOfKnowledge": "Math - PE - Art",
+      "responsibleCourses": "Math",
+      "firstName": "Wendy",
+      "lastName": "Squirrel",
+      "adress": "Bamsamgatan 55A",
+      "postalCode": "776-32",
+      "personalIdentityNumber": "7782-312"
+    }
+  ],
+  "administrators": [],
+  "educationLeaders": []
 }

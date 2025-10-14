@@ -9,6 +9,6 @@ public class Teacher : Person , IInfo
 
     public string GetInfo()
     {
-        return $"{FirstName} {LastName} (ID: {AreaOfKnowledge})";
+        return $"{FirstName} {LastName} (Teaching: {AreaOfKnowledge}) (Managing: {ResponsibleCourses})";
     }
 }
