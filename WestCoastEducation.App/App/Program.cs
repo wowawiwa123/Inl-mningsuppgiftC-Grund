@@ -53,6 +53,23 @@ class Program
             ResponsibleCourses = "Math"
         };
 
+        var educationLeader1 = new EducationLeader()
+        {
+            FirstName = "Bambi",
+            LastName = "Squirrel",
+            Adress = "Bamsamgatan 55A",
+            PostalCode = "776-32",
+            PersonalIdentityNumber = "7782-555",
+            AreaOfKnowledge = "Math - PE - Art",
+            ResponsibleCourses = "Math",
+            DateOfEmployment = new DateTime(2001, 07, 30)
+        };
+
+        var administrator1 = new Administrator()
+        {
+            
+        };
+
         var course1 = new Course()
         {
             CourseId = "1111",
@@ -81,10 +98,13 @@ class Program
             Type = CourseType.Remote
         };
 
+
+
         
         courseService.AddStudentToCourse(course1, student1);
         courseService.AddStudentToCourse(course1, student2);
         courseService.AddTeacherToCourse(course1, teacher1);
+        courseService.AddEducationLeaderToCourse(course1, educationLeader1);
         courseService.ShowCourseInfo(course1);
         jsonService.SaveCourse(path, course1);
         

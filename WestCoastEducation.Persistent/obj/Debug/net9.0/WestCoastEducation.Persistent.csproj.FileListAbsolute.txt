@@ -9,3 +9,4 @@ C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation
 C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Persistent\obj\Debug\net9.0\refint\WestCoastEducation.Persistent.dll
 C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Persistent\obj\Debug\net9.0\WestCoastEducation.Persistent.pdb
 C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Persistent\obj\Debug\net9.0\ref\WestCoastEducation.Persistent.dll
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Persistent\obj\Debug\net9.0\WestCoastEducation.Persistent.sourcelink.json

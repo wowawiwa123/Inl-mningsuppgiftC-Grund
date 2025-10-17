@@ -1,6 +1,8 @@
-﻿namespace WestCoastEducation.Domain;
+﻿// using System.Runtime.CompilerServices;
 
-public interface IInfo
-{
-    string GetInfo();
-}  
+// namespace WestCoastEducation.Domain;
+
+// public interface IInfo
+// {
+//     string GetInfo();
+// }  

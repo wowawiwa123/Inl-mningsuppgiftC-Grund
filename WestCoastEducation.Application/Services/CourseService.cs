@@ -1,5 +1,6 @@
 ﻿namespace WestCoastEducation.Application;
 
+using System.Threading.Tasks.Dataflow;
 using WestCoastEducation.Domain;
 using WestCoastEducation.Persistent;
 
@@ -16,7 +17,7 @@ public class CourseService
             Console.WriteLine("Student is already enrolled!");
         }
     }
-    
+
     public void AddTeacherToCourse(Course course, Teacher teacher)
     {
         if (course.AddTeacher(teacher))
@@ -27,6 +28,30 @@ public class CourseService
         else
         {
             Console.WriteLine("Teacher is already in the system");
+        }
+    }
+    public void AddEducationLeaderToCourse(Course course, EducationLeader educationLeader)
+    {
+        if (course.AddEducationLeader(educationLeader))
+        {
+            Console.WriteLine("EducationLeader has been added!");
+
+        }
+        else
+        {
+            Console.WriteLine("EducationLeader is already in the system");
+        }
+    }
+    public void AddAdministratorToCourse(Course course, Administrator administrator)
+    {
+        if (course.AddAdminstrator(administrator))
+        {
+            Console.WriteLine("Administrator has been added!");
+
+        }
+        else
+        {
+            Console.WriteLine("Administrator is already in the system");
         }
     }
     public void ShowCourseInfo(Course course)
@@ -48,8 +73,11 @@ public class CourseService
         {
             Console.WriteLine("Enrolled Students: ");
             foreach (var student in course.Students)
+            {
                 Console.WriteLine(student);
-                
+            }
+            Console.WriteLine("|--------------------|");
+            
         }
 
         if (course.Teachers.Count == 0)
@@ -60,37 +88,54 @@ public class CourseService
         {
             Console.WriteLine("Designated Teacher: ");
             foreach (var teacher in course.Teachers)
+            {
                 Console.WriteLine(teacher);
+            }
+            Console.WriteLine("|--------------------|");
         }
-    }
 
-
-    public void ListStudents(Course course)
-{
-    if (course.Students.Count == 0)
-    {
-        Console.WriteLine("No students enrolled!");
-    }
-    else
-    {
-        foreach (var student in course.Students)
-            Console.WriteLine(student);
-    }
-}
-
-
-    public void ListTeachers(Course course)
-    {
-        if (course.Teachers.Count == 0)
+        if (course.EducationLeaders.Count == 0)
         {
-            Console.WriteLine("No teachers assigned!");
+            Console.WriteLine("No educationLeader assigned to this course!");
         }
         else
         {
-            foreach (var teacher in course.Teachers)
-                Console.WriteLine(teacher);
+            Console.WriteLine("Educationleader:");
+            foreach (var educationLeader in course.EducationLeaders)
+            {
+                Console.WriteLine(educationLeader);
+            }
+            Console.WriteLine("|--------------------|");
         }
     }
+
+
+//     public void ListStudents(Course course)
+// {
+//     if (course.Students.Count == 0)
+//     {
+//         Console.WriteLine("No students enrolled!");
+//     }
+//     else
+//     {
+//         foreach (var student in course.Students)
+//             Console.WriteLine(student);
+//     }
+// }
+
+
+//     public void ListTeachers(Course course)
+//     {
+//         if (course.Teachers.Count == 0)
+//         {
+//             Console.WriteLine("No teachers assigned!");
+//         }
+//         else
+//         {
+//             foreach (var teacher in course.Teachers)
+//                 Console.WriteLine(teacher);
+//         }
+//     }
 
 
 

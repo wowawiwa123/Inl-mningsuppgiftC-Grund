@@ -2,7 +2,7 @@
 
 public class Administrator : EducationLeader
 {
-    public new string GetInfo()
+    public override string ToString()
     {
         return $"{FirstName} {LastName}  (Managing: {ResponsibleCourses})";
     }

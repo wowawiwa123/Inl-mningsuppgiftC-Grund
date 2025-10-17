@@ -15,3 +15,4 @@ C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation
 C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\ref\WestCoastEducation.Application.dll
 C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Persistent.dll
 C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\bin\Debug\net9.0\WestCoastEducation.Persistent.pdb
+C:\Users\kevin\Documents\VisualCode\InlämningsuppgiftC#Grund\WestCoastEducation.Application\obj\Debug\net9.0\WestCoastEducation.Application.sourcelink.json

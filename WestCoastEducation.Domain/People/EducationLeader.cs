@@ -1,12 +1,12 @@
 ﻿namespace WestCoastEducation.Domain;
 
-public class EducationLeader : Teacher, IInfo
+public class EducationLeader : Teacher
 {
     public DateTime DateOfEmployment { get; set; }
 
-    public new string GetInfo()
+    public override string ToString()
     {
-        return $"{FirstName} {LastName} (Teaching: {AreaOfKnowledge}) (Managing: {ResponsibleCourses}) (Employed since: {DateOfEmployment})";
+        return $"{FirstName} {LastName}  (Employed since: {DateOfEmployment: yyyy-MM-dd})";
     }
 }
 

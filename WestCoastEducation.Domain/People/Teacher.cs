@@ -1,13 +1,13 @@
 ﻿namespace WestCoastEducation.Domain;
 
-public class Teacher : Person , IInfo
+public class Teacher : Person 
 {
     public string AreaOfKnowledge { get; set; } = "";
     public string ResponsibleCourses { get; set; } = "";
 
 
 
-    public string GetInfo()
+    public override string ToString()
     {
         return $"{FirstName} {LastName} (Teaching: {AreaOfKnowledge}) (Managing: {ResponsibleCourses})";
     }

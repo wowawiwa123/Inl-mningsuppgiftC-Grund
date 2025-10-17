@@ -2,7 +2,7 @@
 
 namespace WestCoastEducation.Domain;
 
-public class Course : IInfo
+public class Course 
 {
     public string CourseId { get; set; } = "";
     public string Title { get; set; } = "";
@@ -58,6 +58,7 @@ public class Course : IInfo
         }
         else
         {
+            administrators.Add(administratorToAdd);
             return true;
         }
     }
@@ -69,10 +70,11 @@ public class Course : IInfo
         }
         else
         {
+            educationLeaders.Add(educationLeaderToAdd);
             return true;
         }
     }
-    public string GetInfo()
+    public override string ToString()
     {
         return $"Course: {Title} ({CourseId}), Length: {CourseLength}, Type: {Type}, Students: {students.Count}, Teachers: {teachers.Count}";
     }

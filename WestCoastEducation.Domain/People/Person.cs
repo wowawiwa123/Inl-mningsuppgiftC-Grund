@@ -9,6 +9,7 @@ public abstract class Person
     public string PersonalIdentityNumber { get; set; } = "";
 
 
+    
     public override string ToString()
     {
         return $"Name: {FirstName} {LastName} - ID: {PersonalIdentityNumber}";

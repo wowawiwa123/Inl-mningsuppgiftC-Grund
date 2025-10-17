@@ -33,5 +33,16 @@
     }
   ],
   "administrators": [],
-  "educationLeaders": []
+  "educationLeaders": [
+    {
+      "dateOfEmployment": "2001-07-30T00:00:00",
+      "areaOfKnowledge": "Math - PE - Art",
+      "responsibleCourses": "Math",
+      "firstName": "Bambi",
+      "lastName": "Squirrel",
+      "adress": "Bamsamgatan 55A",
+      "postalCode": "776-32",
+      "personalIdentityNumber": "7782-555"
+    }
+  ]
 }

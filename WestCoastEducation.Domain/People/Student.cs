@@ -1,8 +1,8 @@
 ﻿namespace WestCoastEducation.Domain;
 
-public class Student : Person , IInfo
+public class Student : Person 
 {
-    public string GetInfo()
+    public override string ToString()
     {
         return $"{FirstName} {LastName} (ID: {PersonalIdentityNumber})";
     }
