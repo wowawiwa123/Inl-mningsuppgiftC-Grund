@@ -56,6 +56,10 @@ public class CourseService
     }
     public void ShowCourseInfo(Course course)
     {
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("");
         Console.WriteLine("-------Course Information -------");
         Console.WriteLine($"Course ID: {course.CourseId}");
         Console.WriteLine($"Subject: {course.Title}");
@@ -107,6 +111,21 @@ public class CourseService
             }
             Console.WriteLine("|--------------------|");
         }
+
+        if (course.Administrators.Count == 0)
+        {
+            Console.WriteLine("No Administrator assigned to this course!");
+        }
+        else
+        {
+            Console.WriteLine("Administrator:");
+            foreach (var administrator in course.Administrators)
+            {
+                Console.WriteLine(administrator);
+            }
+            Console.WriteLine("|--------------------|");
+        }
+        
     }
 
 

@@ -1,8 +1,5 @@
-﻿
-namespace WestCoastEducation.App;
+﻿namespace WestCoastEducation.App;
 
-using System.Reflection.Metadata;
-using System.Runtime.CompilerServices;
 using WestCoastEducation.Application;
 using WestCoastEducation.Domain;
 using WestCoastEducation.Persistent;
@@ -15,7 +12,6 @@ class Program
         var jsonService = new JsonService(storage);
         var courseService = new CourseService();
         var path = $"{Environment.CurrentDirectory}/Data/courses.json";
-
 
         var student1 = new Student()
         {
@@ -53,6 +49,17 @@ class Program
             ResponsibleCourses = "Math"
         };
 
+        var teacher2 = new Teacher()
+        {
+            FirstName = "Sally",
+            LastName = "Burnes",
+            Adress = "TimTam 55A",
+            PostalCode = "236-32",
+            PersonalIdentityNumber = "5552-312",
+            AreaOfKnowledge = "English",
+            ResponsibleCourses = "English"
+        };
+
         var educationLeader1 = new EducationLeader()
         {
             FirstName = "Bambi",
@@ -64,10 +71,37 @@ class Program
             ResponsibleCourses = "Math",
             DateOfEmployment = new DateTime(2001, 07, 30)
         };
+        var educationLeader2 = new EducationLeader()
+        {
+            FirstName = "Alex",
+            LastName = "Wendell",
+            Adress = "Logitexh 55A",
+            PostalCode = "886-32",
+            PersonalIdentityNumber = "4244-422",
+            AreaOfKnowledge = "Language courses",
+            ResponsibleCourses = "English - Spanish - German",
+            DateOfEmployment = new DateTime(2001, 07, 30)
+        };
 
         var administrator1 = new Administrator()
         {
-            
+            FirstName = "Lars",
+            LastName = "Olof",
+            Adress = "Vänersborgsgatan 13",
+            PostalCode = "662-32",
+            PersonalIdentityNumber = "0101-898",
+            ResponsibleCourses = "Science fields",
+            DateOfEmployment = new DateTime(1992, 07, 30)
+        };
+        var administrator2 = new Administrator()
+        {
+            FirstName = "Bengt",
+            LastName = "Gustavsson",
+            Adress = "Vänersborgsgatan 13",
+            PostalCode = "662-32",
+            PersonalIdentityNumber = "0101-444",
+            ResponsibleCourses = "Science fields",
+            DateOfEmployment = new DateTime(1992, 07, 30)
         };
 
         var course1 = new Course()
@@ -98,20 +132,31 @@ class Program
             Type = CourseType.Remote
         };
 
+        var courses = new List<Course>();
+        if (File.Exists(path))
+        {
+            courses = jsonService.GetCourse(path);
+        }
 
-
-        
         courseService.AddStudentToCourse(course1, student1);
         courseService.AddStudentToCourse(course1, student2);
         courseService.AddTeacherToCourse(course1, teacher1);
         courseService.AddEducationLeaderToCourse(course1, educationLeader1);
-        courseService.ShowCourseInfo(course1);
-        jsonService.SaveCourse(path, course1);
-        
-        
-        
-    }
-    
-    
+        courseService.AddAdministratorToCourse(course1, administrator1);
+        courseService.ShowCourseInfo(course1); 
 
+        courseService.AddStudentToCourse(course3, student1);
+        courseService.AddStudentToCourse(course3, student2);
+        courseService.AddTeacherToCourse(course3, teacher2);
+        courseService.AddEducationLeaderToCourse(course3, educationLeader2);
+        courseService.AddAdministratorToCourse(course3, administrator2);
+        courseService.ShowCourseInfo(course3); 
+
+
+        courses.Add(course1);
+        courses.Add(course2);
+        courses.Add(course3);
+        jsonService.SaveCourse(path, courses);
+
+    }
 }
