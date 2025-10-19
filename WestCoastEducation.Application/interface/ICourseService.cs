@@ -4,6 +4,6 @@ namespace WestCoastEducation.Application;
 
 public interface ICourseService
 {
-    void SaveCourse(string patch, Course course);
-    Course GetCourse(string path);
+    void SaveCourse(string patch, List<Course> course);
+    List<Course> GetCourse(string path);
 }

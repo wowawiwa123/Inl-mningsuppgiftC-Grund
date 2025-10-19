@@ -18,13 +18,13 @@ public class JsonService : ICourseService
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
         WriteIndented = true
     };
-    public void SaveCourse(string path, Course course)
+    public void SaveCourse(string path, List<Course> course)
     {
         string json = JsonSerializer.Serialize(course, _options);
         _storage.Write(path, json);
     }
 
-    public Course GetCourse(string path)
+    public List<Course> GetCourse(string path)
     {
         _options = new JsonSerializerOptions
         {
@@ -34,8 +34,8 @@ public class JsonService : ICourseService
         var json = _storage.Read(path);
         Console.WriteLine(json);
 
-        var course = JsonSerializer.Deserialize<Course>(json, _options);
+        var course = JsonSerializer.Deserialize<List<Course>>(json, _options);
 
-        return course ?? new Course();
+        return course ?? new List<Course>();
     }
 }
